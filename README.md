@@ -22,7 +22,7 @@ Este proyecto utiliza un conjunto de datos que contiene información sobre:
 - Consumo de bebidas alcohólicas
 
 ### Datos sin procesar
-- `datos_transformados2.csv`: Archivo original que contiene los datos recogidos en formato CSV con las variables categóricas sin codificar.
+- Los datos originales fueron extraídos del Instituto Nacional de Estadística. El archivo que es utilizado en el programa (`datos_transformados2.csv`) parte de estos datos iniciales, editados con Excel para separar los parámetros por columnas de forma que el programa pueda reconocerlos correctamente.
 
 ### Datos procesados
 - En el código se realiza la transformación de las variables categóricas mediante codificación de etiquetas (`LabelEncoder`).
