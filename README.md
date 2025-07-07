@@ -45,24 +45,16 @@ Además, es fundamental leer ejecutarlo paso a paso.
   - datos_transformados2.csv (datos sin procesar y procesados)
 
 /src
-  /scripts
-    - Scripts para entrenamiento y evaluación del modelo
   /notebooks
     - Notebooks Jupyter con los experimentos y visualizaciones
 
 /docs
-  - Documentación adicional (si corresponde)
+  - Documentación adicional en pdf
 
 /public
   - Carpeta donde las páginas de GitLab escribirán el sitio web estático.
   - index.html La documentación en formato enriquecido (por ejemplo, HTML, Markdown, JavaScript) se completará public.
 ```
-
-## Contribución
-Las contribuciones son bienvenidas. Para colaborar en este proyecto, por favor, abre una "issue" o crea una "merge request" en el repositorio.
-
-## Licencia
-Indique la licencia o déjela como predeterminada (si corresponde).
 
 ## Contacto
 - Pablo Sáez Morales - pablo.saezmorales@studio.unibo.it
