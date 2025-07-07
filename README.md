@@ -22,7 +22,7 @@ Este proyecto utiliza un conjunto de datos que contiene información sobre:
 - Consumo de bebidas alcohólicas
 
 ### Datos sin procesar
-- `datos_transformados2.csv`: Archivo original que contiene los datos recogidos en formato CSV con las variables categóricas sin codificar.
+- `datos_transformados2.csv`: Archivo original que contiene los datos recogidos en formato CSV con las variables categóricas sin codificar. hola que tal
 
 ### Datos procesados
 - En el código se realiza la transformación de las variables categóricas mediante codificación de etiquetas (`LabelEncoder`).
