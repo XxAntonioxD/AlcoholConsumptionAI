@@ -36,7 +36,7 @@ Este proyecto utiliza un conjunto de datos que contiene información sobre:
 ## Uso
 Cómo ejecutar el proyecto:
 
-# NOTEBOOK
+### NOTEBOOK
 En este proyecto, el modelo Random Forest y la técnica SHAP no pueden separarse en dos proyectos distintos.
 El motivo es que SHAP necesita un modelo entrenado para calcular la importancia de las variables.
 Primero se entrena el Random Forest y después SHAP utiliza ese modelo para explicar sus decisiones.
