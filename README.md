@@ -11,7 +11,7 @@ Instrucciones para configurar el entorno del proyecto:
 
 - Clonar el repositorio:
 ```bash
-git clone <aquí_pones_tu_link_del_repositorio>
+git clone https://github.com/XxAntonioxD/AlcoholConsumptionAI.git
 ```
 
 ## Datos
