@@ -37,7 +37,7 @@ El motivo es que SHAP necesita un modelo entrenado para calcular la importancia 
 Primero se entrena el Random Forest y después SHAP utiliza ese modelo para explicar sus decisiones.
 Ambos pasos son parte del mismo flujo y deben ejecutarse juntos y en orden.
 
-Además, es fundamental leer cada celda y sus comentarios antes de ejecutarlas, ya que el proyecto no está diseñado para ejecutarse de forma desordenada ni por partes independientes.
+Además, es fundamental leer ejecutarlo paso a paso.
 
 ## Estructura
 ```
