@@ -65,5 +65,6 @@ Las contribuciones son bienvenidas. Para colaborar en este proyecto, por favor, 
 Indique la licencia o déjela como predeterminada (si corresponde).
 
 ## Contacto
-- [Tu nombre] - [Tu correo]
-- [Puedes añadir otros colaboradores si corresponde]
+- Pablo Sáez Morales - pablo.saezmorales@studio.unibo.it
+- Antonio Ruiz Jiménez - antonio.ruizjimenez@studio.unibo.it
+- Candela Esparrica Torrecilla - candela.torrecilla2@studio.unibo.it
