@@ -36,61 +36,13 @@ Este proyecto utiliza un conjunto de datos que contiene información sobre:
 ## Uso
 Cómo ejecutar el proyecto:
 
-### Instrucciones paso a paso
+## NOTEBOOK
+En este proyecto, el modelo Random Forest y la técnica SHAP no pueden separarse en dos proyectos distintos.
+El motivo es que SHAP necesita un modelo entrenado para calcular la importancia de las variables.
+Primero se entrena el Random Forest y después SHAP utiliza ese modelo para explicar sus decisiones.
+Ambos pasos son parte del mismo flujo y deben ejecutarse juntos y en orden.
 
-1. Cargar el conjunto de datos:
-```python
-import pandas as pd
-df = pd.read_csv('datos_transformados2.csv', encoding='latin-1', sep=';')
-```
-
-2. Entrenar y evaluar el modelo:
-```python
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder
-from sklearn.metrics import accuracy_score, precision_score, recall_score
-
-# Definir características y etiquetas
-features = ['Sexo', 'Edad', 'Nivel de estudios']
-X = df[features].copy()
-y = df['Consumo de bebidas alchólicas'].copy()
-
-# Codificar variables categóricas
-label_encoder = LabelEncoder()
-X['Sexo'] = label_encoder.fit_transform(X['Sexo'])
-X['Edad'] = label_encoder.fit_transform(X['Edad'])
-X['Nivel de estudios'] = label_encoder.fit_transform(X['Nivel de estudios'])
-y = label_encoder.fit_transform(y)
-
-# Separar en conjuntos de entrenamiento y prueba
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=77)
-
-# Entrenar el modelo
-rf_model = RandomForestClassifier(n_estimators=100, max_depth=5, max_features='log2', random_state=42)
-rf_model.fit(X_train, y_train)
-
-# Realizar predicciones
-y_pred = rf_model.predict(X_test)
-
-# Evaluar el modelo
-print("Exactitud:", accuracy_score(y_test, y_pred))
-print("Precisión:", precision_score(y_test, y_pred, average='weighted'))
-print("Sensibilidad:", recall_score(y_test, y_pred, average='weighted'))
-```
-
-3. Visualizar la importancia de las variables:
-```python
-import matplotlib.pyplot as plt
-
-importances = rf_model.feature_importances_
-feature_names = X.columns
-
-plt.bar(feature_names, importances)
-plt.title("Importancia de las Variables (Random Forest)")
-plt.ylabel("Importancia")
-plt.show()
-```
+Además, es fundamental leer cada celda y sus comentarios antes de ejecutarlas, ya que el proyecto no está diseñado para ejecutarse de forma desordenada ni por partes independientes.
 
 ## Estructura
 ```
