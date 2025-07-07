@@ -14,11 +14,6 @@ Instrucciones para configurar el entorno del proyecto:
 git clone <aquí_pones_tu_link_del_repositorio>
 ```
 
-- Instalar dependencias:
-```bash
-pip install -r requirements.txt
-```
-
 ## Datos
 Este proyecto utiliza un conjunto de datos que contiene información sobre:
 - Sexo
@@ -55,22 +50,19 @@ Además, es fundamental leer cada celda y sus comentarios antes de ejecutarlas, 
   /notebooks
     - Notebooks Jupyter con los experimentos y visualizaciones
 
-/tests
-  - Casos de prueba (no implementados actualmente)
-
 /docs
   - Documentación adicional (si corresponde)
 
 /public
-  - Carpeta para la página web estática (no implementada)
-  - index.html (por completar en caso de documentar en GitLab Pages)
+  - Carpeta donde las páginas de GitLab escribirán el sitio web estático.
+  - index.html La documentación en formato enriquecido (por ejemplo, HTML, Markdown, JavaScript) se completará public.
 ```
 
 ## Contribución
 Las contribuciones son bienvenidas. Para colaborar en este proyecto, por favor, abre una "issue" o crea una "merge request" en el repositorio.
 
 ## Licencia
-Este proyecto se distribuye bajo la licencia MIT, salvo que se indique lo contrario.
+Indique la licencia o déjela como predeterminada (si corresponde).
 
 ## Contacto
 - [Tu nombre] - [Tu correo]
