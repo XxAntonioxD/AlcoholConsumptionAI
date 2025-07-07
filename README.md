@@ -1,46 +1,42 @@
 
-# Título del Proyecto: Predicción del Consumo de Alcohol mediante Machine Learning
+# Título del proyecto: Predicción del Consumo de Alcohol mediante Machine Learning
 
-## Descripción General
+## Descripción general
 Este proyecto tiene como objetivo predecir los hábitos de consumo de bebidas alcohólicas a partir de variables demográficas utilizando técnicas de Machine Learning.
 
-El conjunto de datos contiene información sobre el sexo, la edad y el nivel de estudios de cada individuo. El objetivo es entrenar un clasificador que, dadas estas variables, sea capaz de predecir si una persona consume bebidas alcohólicas.
+El modelo desarrollado permite, a partir de los datos de sexo, edad y nivel de estudios, estimar la probabilidad de que un individuo consuma alcohol. Este tipo de análisis puede ser útil para entender patrones de consumo en diferentes grupos poblacionales y apoyar en la toma de decisiones en campañas de concienciación.
 
-El modelo utilizado es un **Random Forest Classifier**, y su rendimiento se evalúa mediante métricas como la precisión, la exactitud y la sensibilidad.
+## Instalación y configuración
+Instrucciones para configurar el entorno del proyecto:
 
-## Instalación y Configuración
-Sigue estos pasos para configurar el entorno del proyecto:
-
-1. Clona el repositorio:
+- Clonar el repositorio:
 ```bash
 git clone <aquí_pones_tu_link_del_repositorio>
 ```
 
-2. Instala las dependencias necesarias:
+- Instalar dependencias:
 ```bash
 pip install -r requirements.txt
 ```
 
-📌 **Nota:** Las librerías necesarias son:
-- pandas
-- scikit-learn
-- matplotlib
-
 ## Datos
-El conjunto de datos utilizado en este proyecto es:  
-**datos_transformados2.csv**
+Este proyecto utiliza un conjunto de datos que contiene información sobre:
+- Sexo
+- Edad
+- Nivel de estudios
+- Consumo de bebidas alcohólicas
 
-Este conjunto de datos contiene las siguientes columnas:
-- `Sexo`: Género del individuo.
-- `Edad`: Categoría de edad.
-- `Nivel de estudios`: Nivel educativo.
-- `Consumo de bebidas alchólicas`: Variable objetivo que indica si la persona consume alcohol.
+### Datos sin procesar
+- `datos_transformados2.csv`: Archivo original que contiene los datos recogidos en formato CSV con las variables categóricas sin codificar.
 
-Los datos ya están preprocesados y listos para el entrenamiento.
+### Datos procesados
+- En el código se realiza la transformación de las variables categóricas mediante codificación de etiquetas (`LabelEncoder`).
+- Los datos procesados se utilizan directamente en el modelo Random Forest para entrenar y evaluar el clasificador.
 
 ## Uso
+Cómo ejecutar el proyecto:
 
-### Cómo ejecutar el proyecto:
+### Instrucciones paso a paso
 
 1. Cargar el conjunto de datos:
 ```python
@@ -96,18 +92,34 @@ plt.ylabel("Importancia")
 plt.show()
 ```
 
-## Estructura del Proyecto
+## Estructura
 ```
+/data
+  - datos_transformados2.csv (datos sin procesar y procesados)
+
 /src
   /scripts
-    - Scripts para procesamiento de datos y entrenamiento del modelo
+    - Scripts para entrenamiento y evaluación del modelo
   /notebooks
-    - Notebooks Jupyter con los experimentos y evaluaciones
+    - Notebooks Jupyter con los experimentos y visualizaciones
+
+/tests
+  - Casos de prueba (no implementados actualmente)
 
 /docs
-  - Documentación adicional en PDF
+  - Documentación adicional (si corresponde)
+
+/public
+  - Carpeta para la página web estática (no implementada)
+  - index.html (por completar en caso de documentar en GitLab Pages)
 ```
+
+## Contribución
+Las contribuciones son bienvenidas. Para colaborar en este proyecto, por favor, abre una "issue" o crea una "merge request" en el repositorio.
+
+## Licencia
+Este proyecto se distribuye bajo la licencia MIT, salvo que se indique lo contrario.
 
 ## Contacto
 - [Tu nombre] - [Tu correo]
-- [Puedes añadir otros colaboradores si quieres]
+- [Puedes añadir otros colaboradores si corresponde]
